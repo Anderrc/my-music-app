@@ -1,9 +1,11 @@
 import React from 'react';
 
+
+
 const Label = (Props) => {
     return ( 
 
-    <label>{Props.text}</label>
+        <label className="label-campo">{Props.text}</label>
      );
 }
  

@@ -1,0 +1,11 @@
+@import '../../../style/_global';
+
+.form-login__header__text{
+    font-size: 700;
+    font-family: Montserrat;
+    color: $orange;
+}
+.form-login__header{
+    border-bottom: 1px solid $gray;
+    margin-bottom: 10px;
+}
