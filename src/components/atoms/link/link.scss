@@ -1,0 +1,14 @@
+@import '../../../style/__global.scss';
+
+.Link{
+    font-family: Montserrat;
+    font-size: 1rem;
+    color:$secondaryGray;
+    text-decoration: none;
+    transition: 0.3s all;
+    margin: 15px 15px;
+}
+
+.Link:hover{
+    color: $orange;
+}

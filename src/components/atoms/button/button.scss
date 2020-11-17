@@ -1,0 +1,15 @@
+@import '../../../style/_global';
+
+.button{
+    border-radius: 10px;
+    border: none;
+    background: $orange-dark;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-shadow: 3px 3px 3px $shadowGray;
+}
+
+.button__text{
+    color: $primaryWhite;
+}

@@ -1,0 +1,30 @@
+@import '../../../style/_global';
+
+.login{
+    width: 100%;
+    height: 100vh;
+    background:url('../../../image/bg-1.jpg');
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.login__body{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    background:$primaryWhite;
+    border-radius: 20px;
+    box-shadow: $shadowGray  5px 5px 5px;
+}
+
+.card--login{
+    margin: 20px 10px;
+    text-align: center;
+}

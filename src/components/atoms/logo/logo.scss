@@ -1,0 +1,14 @@
+@import '../../../style/__global.scss';
+
+.logo{
+    font-family: Montserrat;
+    font-weight: 700;
+    color: $primaryWhite;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.3s all;
+    opacity: 1;
+}
+.logo:hover{
+    color: $orange;
+}
