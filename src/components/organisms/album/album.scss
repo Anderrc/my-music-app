@@ -1,0 +1,12 @@
+@import '../../../style/_global';
+
+.album{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    padding: 10px;
+}

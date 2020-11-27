@@ -4,7 +4,7 @@ import './logo.scss';
 
 const Logo = (Props) => {
     return ( 
-        <a className="logo" href="/home">My-Music-App</a>
+        <a className="logo" href={Props.redirect}>My-Music-App</a>
      );
 }
  

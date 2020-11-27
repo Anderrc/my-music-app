@@ -4,7 +4,7 @@ import MenuHeader from '../../molecules/menu-header/menuHeader';
 const Header = () => {
     return ( 
         <header>
-            <MenuHeader/>
+            <MenuHeader />
         </header>
      );
 }

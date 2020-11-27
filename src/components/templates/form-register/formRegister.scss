@@ -1,0 +1,17 @@
+@import '../../../style/_global';
+
+.form-register__header{
+    border-bottom: 1px solid $dark;
+    margin-bottom: 10px;
+}
+
+.form-register__header-text{
+    font-size: 700;
+    font-family: Montserrat;
+    color: $orange;
+}
+
+.form-register__footer{
+    border-top: 1px solid $dark;
+    padding: 10px 0px;
+}

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import dotenv from 'dotenv'
+dotenv.config({path: ".env.local"})
 
 ReactDOM.render(
   <React.StrictMode>
