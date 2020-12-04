@@ -9,11 +9,9 @@ import Link from '../../atoms/link/link';
 
 const Login = () => {
 
-
     return ( 
         
         <div className="login">
-            <Header/> 
             <div className="login__body">
                 <div className="card card--login">
                     <FormLogin

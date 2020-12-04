@@ -8,10 +8,9 @@ import Image from '../../atoms/image/image';
 
 const MenuHeader = (Props) => {
 
-    const [usuario, setUsuario] = useContext(AppContext)
+    // const [usuario, setUsuario] = useContext(AppContext)
     // const user = JSON.parse(localStorage.getItem('usuario'))
     const user = JSON.parse(localStorage.getItem('usuario'))
-    console.log(usuario)
     const logout =() =>{
         localStorage.clear();
     }

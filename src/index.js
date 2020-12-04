@@ -4,11 +4,20 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import dotenv from 'dotenv'
+import Header from './components/organisms/header/header';
+import Aside from './components/molecules/aside/aside';
 dotenv.config({path: ".env.local"})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <div className="globalContent">
+      <Header />
+      <div className="globalContent__body">
+        <div className="contenedor">
+          <App/>
+        </div>
+      </div> 
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
