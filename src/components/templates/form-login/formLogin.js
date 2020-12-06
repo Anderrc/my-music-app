@@ -6,13 +6,13 @@ import './formLogin.scss'
 
 
 const FormLogin = () => {
-    var scope = 'user-read-private user-read-email';
+    var scope = 'user-read-private user-read-email user-library-read';
     var client_id = 'b31e27acd21b459185707da6890ea79f'; // Your client id
     var client_secret = 'c2cef081c3894067afa17942e56064f7'; // Your secret
     var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
 
 
-    var url_inicial = "https://accounts.spotify.com/authorize?client_id=b31e27acd21b459185707da6890ea79f&response_type=code&redirect_uri="+ redirect_uri +"&scope=user-read-private%20user-read-email";
+    var url_inicial = "https://accounts.spotify.com/authorize?client_id=b31e27acd21b459185707da6890ea79f&response_type=code&redirect_uri="+ redirect_uri +"&scope="+scope+"%20user-read-email";
 
     return ( 
         <div className="form-login">

@@ -1,0 +1,22 @@
+.button-favorite{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.button-favorite__img{
+  width: 100%;
+  height: 100%;
+}
+
+.button-favorite__activo{
+  background-image: url('../../../image/favoriteActivo.svg');
+}
+.button-favorite__inactivo{
+  background-image: url('../../../image/favorite.svg');
+}

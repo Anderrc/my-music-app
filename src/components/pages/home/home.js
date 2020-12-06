@@ -25,20 +25,17 @@ const Home = () => {
     }, []);
     console.log(listNewRelease)
     return (
-        <div className="home">
-            <Header />
-            <div className="body">
-                <aside className="body__aside">
-                    <Aside className="home__aside" />
-                </aside>
-                <div className="body__body">
-                    <h2 className="body__body__titulo-pagina">Nuevos Lanzamientos</h2>
-                    {listNewRelease.map(item => (
-                        <Album data={item} key={item.id} />
-                    ))}
-                </div>
-            </div>
+        <div className="home contenedor__pagina">
+            <aside className="body__aside">
+                <Aside className="home__aside" />
+            </aside>
 
+            <div className="contenido">
+                <h2 className="titulo-pagina">Nuevos Lanzamientos</h2>
+                {listNewRelease.map(item => (
+                    <Album data={item} />
+                ))}
+            </div>
         </div>
     );
 }

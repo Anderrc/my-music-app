@@ -7,6 +7,8 @@ import Login from './components/pages/login/login';
 import Register from './components/pages/register/register';
 import UsuarioPrivider from './provider/usuario';
 import GetUser from './components/pages/callback/getUser'
+import PlayList from './components/pages/playlist/playlist';
+import Favorite from './components/pages/favorite/favorite';
 
 const App = () => {
     return ( 
@@ -36,6 +38,14 @@ const App = () => {
                     <Route 
                         exact path="/callback"
                         component={Callback}
+                    />
+                    <Route 
+                        exact path="/playlist/:id"
+                        component={PlayList}
+                    />
+                     <Route 
+                        exact path="/favorite"
+                        component={Favorite}
                     />
                 </UsuarioPrivider>
             </Switch>

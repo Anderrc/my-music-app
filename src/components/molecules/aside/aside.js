@@ -21,7 +21,7 @@ const Aside = (Props) => {
             }
             if(user !== null){
                 setListaUser([])
-                consultaListas();
+                consultaListas(true);
                 
             }
         }
@@ -31,9 +31,9 @@ const Aside = (Props) => {
     return ( 
         <div className="aside">
             <Link redirect="/exporar" text="Exporar"/>
-            <Link redirect="/favoritas" text="Favoritas"/>
+            <Link redirect="/favorite" text="Favoritas"/>
             {listasUsuario.map(item=>(
-                <Link key={item.name} redirect={item.name} text={item.name}/>
+                <Link key={item.name} redirect={"/playlist/"+item.id}  text={item.name}/>
             ))}
         </div>
      );

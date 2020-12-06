@@ -4,10 +4,12 @@ const GetToken = (code) => {
     var client_id = 'b31e27acd21b459185707da6890ea79f'; // Your client id
     var client_secret = 'c2cef081c3894067afa17942e56064f7'; // Your secret
     var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
+    var scopes = 'user-read-private user-read-email user-library-read';
     var authOptions = {
         url: 'https://accounts.spotify.com/api/token',
         form: {
             code,
+            scopes : scopes,
             redirect_uri: redirect_uri,
             grant_type: "authorization_code",
             client_id,
