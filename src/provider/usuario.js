@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const UsuarioPrivider = (Props) => {
 
-    const [usuario, setUsuario] = useState();
+    const [usuario, setUsuario] = useState({});
 
     return ( 
         <div>

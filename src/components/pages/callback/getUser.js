@@ -13,7 +13,7 @@ const GetUser = (props) => {
                     setUsuario(respuesta);
                     setconsulta(false)
                 }).catch(err=>{
-                    setUsuario([])
+                    console.err("Ocurrio un error al optener el usuario")
                 })            
             }
             consultaUsuario();

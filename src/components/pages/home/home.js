@@ -13,6 +13,7 @@ import Album from '../../organisms/album/album';
 const Home = () => {
 
     const [usuario, setUsuario] = useContext(AppContext);
+    console.log(usuario);
     const [listNewRelease, setlistNewRelease] = useState([])
     useEffect(() => {
         const getNewReleases = async () => {
@@ -33,7 +34,7 @@ const Home = () => {
                 <div className="body__body">
                     <h2 className="body__body__titulo-pagina">Nuevos Lanzamientos</h2>
                     {listNewRelease.map(item => (
-                        <Album data={item} />
+                        <Album data={item} key={item.id} />
                     ))}
                 </div>
             </div>
